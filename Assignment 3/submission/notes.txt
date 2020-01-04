@@ -1,0 +1,16 @@
+Explanation
+-----------
+
+Method used - Batch TD(0)
+
+I used Batch TD(0) for this assignment. I used this algorithm since the algorithm can be used to estimate the value function, and it takes only one tuning parameter, alpha. This is beneficial because we can improve ust after each outcome. We do not need to wait till the end of the episode. The following parameters are tuned -
+1. alpha = 1e-5 As per the reference text, it is said that alpha needs to be sufficiently small. Hence I chose an alpha of 1e-5.
+2. Convergence limit = 1e-7. Since this is a batch algorithm, we need to set a threshold to check for the convergence. If the algorithm no longer changes beyond this limit, I have assumed convegence.
+
+Implementation
+--------------
+
+1. For the initial guess of the value function, a choose random numbers between 0 and 50.
+2. This initial guess if used to update the value function based on the state transitions and rewards attained on the way.
+3. After one pass of this algorithm, the updated value function is again passed on to the TD(0) algorithm and another updated value function is obtained.
+4. The algorithm stops when the MSE of the value function after two epochs does not change.

@@ -1,0 +1,6 @@
+List of References
+------------------
+
+1. Reading txt file to list: https://stackoverflow.com/questions/3277503/how-to-read-a-file-line-by-line-into-a-list
+2. Linear Programming: http://benalexkeen.com/linear-programming-with-python-and-pulp-part-2/
+3. Linear Programming: http://benalexkeen.com/linear-programming-with-python-and-pulp-part-4/

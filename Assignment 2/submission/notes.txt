@@ -1,0 +1,6 @@
+Some Points to Note about the implementation
+--------------------------------------------
+
+1. In case of episodic task, if the discount factor is set to 1, we add another constraint in LP that the value at last state is zero. Similarly, in HPI, we drop the last row and last column before taking the matrix inverse in the case of HPI.
+
+2. For mdp-family.txt, I started with three states and assumed the transition probability to be either zero and one. And hence fitted the parameters so as to satisfy the inequalities as per the question.
